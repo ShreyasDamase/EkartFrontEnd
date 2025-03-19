@@ -31,6 +31,24 @@ npm run android
 # OR using Yarn
 yarn android
 ```
+### Add thiis code in android/app/buiild.gradle
+// Vector Icons Configuration
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+
+project.ext.vectoricons = [
+    iconFontNames: [
+        'MaterialCommunityIcons.ttf',
+        'EvilIcons.ttf',
+        'MaterialIcons.ttf',
+        'Ionicons.ttf',
+        'FontAwesome.ttf',
+        'AntDesign.ttf'
+    ]
+]
+
+    /* Autolinking */
+    autolinkLibrariesWithApp()
+}
 
 ### iOS
 
